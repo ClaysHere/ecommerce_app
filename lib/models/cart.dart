@@ -17,7 +17,7 @@ class Cart extends ChangeNotifier {
         imagePath:
             "https://media.finishline.com/i/finishline/DZ5485_042_P1?\$default\$&w=671&&h=671&bg=rgb(237,237,237)",
         description:
-            "You\'ve got the hops and the speed-lace up in shoes that enhance."),
+            "You've got the hops and the speed-lace up in shoes that enhance."),
     Shoe(
         name: "KD Treys",
         price: "240",

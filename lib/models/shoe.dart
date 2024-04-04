@@ -4,9 +4,10 @@ class Shoe {
   final String imagePath;
   final String description;
 
-  Shoe(
-      {required this.name,
-      required this.price,
-      required this.imagePath,
-      required this.description});
+  Shoe({
+    required this.name,
+    required this.price,
+    required this.imagePath,
+    required this.description,
+  });
 }

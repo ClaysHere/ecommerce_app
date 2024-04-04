@@ -16,13 +16,19 @@ class _CartPageState extends State<CartPage> {
   Widget build(BuildContext context) {
     return Consumer<Cart>(
         builder: (context, value, child) => Padding(
-              padding: EdgeInsets.symmetric(horizontal: 25.0),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 25.0,
+              ),
               child: Column(
                 children: [
                   // heading
-                  const Text("My Cart",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
+                  const Text(
+                    "My Cart",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    ),
+                  ),
 
                   const SizedBox(
                     height: 10,
@@ -36,7 +42,9 @@ class _CartPageState extends State<CartPage> {
                             Shoe individualShoe = value.getUserCart()[index];
 
                             // return the cart item
-                            return CartItem(shoe: individualShoe);
+                            return CartItem(
+                              shoe: individualShoe,
+                            );
                           }))
                 ],
               ),
