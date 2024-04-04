@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class CartItem extends StatefulWidget {
-  Shoe shoe;
-  CartItem({super.key, required this.shoe});
+  final Shoe shoe;
+  const CartItem({super.key, required this.shoe});
 
   @override
   State<CartItem> createState() => _CartItemState();
